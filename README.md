@@ -1,2 +1,2 @@
 # credit_risk
-Predicting customers' credit risk using demographic and historical payment data
+Exercise to predicting customers' credit risk using demographic and historical payment data
