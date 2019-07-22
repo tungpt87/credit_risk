@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.metrics import confusion_matrix
 
 
-@deprecated    
+#deprecated    
 def plotROC_AUC(target,pred):
     from sklearn import metrics
     metrics.roc_auc_score(target,pred)
@@ -29,7 +29,7 @@ def plotROC_AUC(target,pred):
 
 
 
-@deprecated
+#deprecated
 def plotHistNumerical(data, columns, hue = None, bins = 50, col_wrap=5):
     import seaborn as sns
     from matplotlib import pyplot as plt
@@ -47,7 +47,7 @@ def plotHistNumerical(data, columns, hue = None, bins = 50, col_wrap=5):
     g.map(plt.hist,"vals",bins=50)
     return g
 
-@deprecated
+#deprecated
 def plotHistNumericalUnivariate(data,num_cols=None,hue=None,bins=50,col_wrap=5):
     # Plot histograms of numerical columns
     import seaborn as sns
@@ -65,7 +65,7 @@ def plotHistNumericalUnivariate(data,num_cols=None,hue=None,bins=50,col_wrap=5):
     
     return g
 
-@deprecated
+#deprecated
 def plotBoxPlot(data, columns, label = None, col_wrap = 5):
     import seaborn as sns
     from matplotlib import pyplot as plt
@@ -84,7 +84,7 @@ def plotBoxPlot(data, columns, label = None, col_wrap = 5):
     
     return g
 
-@deprecated
+#deprecated
 def imputeMissingValues(X, target, predictors = None, method = 'knn-reg', parameters = {'k':3}):
     import numpy as np
     from sklearn.neighbors import KNeighborsRegressor, KNeighborsClassifier
